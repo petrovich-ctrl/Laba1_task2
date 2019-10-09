@@ -23,10 +23,11 @@ def rec1(grama):
 
 
 def rec2(x, e):
-    if(e>=(len(x)/2)):
-        return e
+    if(e>(len(x)/2)):
+        return e    
+
     res = []
-    for i in range(0, len(x) - e):
+    for i in range(e, len(x) - e):
         res.append(sum1(x, max(i-e, 0), min(i + e, len(x))))
     answ = maxInd(res) + e
     return answ;
