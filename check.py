@@ -24,8 +24,8 @@ def rec1(grama):
 
 def rec2(x, e):
     res = []
-    for i in range(e, len(x) - e):
-        res.append(sum1(x, i - e, i + e))
+    for i in range(0, len(x) - e):
+        res.append(sum1(x, max(i-e, 0), min(i + e, len(x))))
     answ = maxInd(res) + e
     return answ;
 
