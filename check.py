@@ -23,7 +23,7 @@ def rec1(grama):
 
 
 def rec2(x, e):
-    if(e>(len(x)/2)):
+    if(e>=(len(x)/2)):
         return e    
 
     res = []
