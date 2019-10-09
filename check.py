@@ -23,6 +23,8 @@ def rec1(grama):
 
 
 def rec2(x, e):
+    if(e>=(len(x)/2)):
+        return e
     res = []
     for i in range(0, len(x) - e):
         res.append(sum1(x, max(i-e, 0), min(i + e, len(x))))
